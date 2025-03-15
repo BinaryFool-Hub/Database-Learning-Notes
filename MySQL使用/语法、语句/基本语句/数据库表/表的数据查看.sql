@@ -15,7 +15,7 @@ FROM table_name;
 SELECT name as 姓名, chinese as 语文
 FROM table_name;
 
--- 列的内容去重显示 DISTINCT
+-- 列的内容去重显示 DISTINCT ，字段只能是一个
 SELECT DISTINCT name
 FROM table_name;
 
@@ -42,6 +42,7 @@ FROM table_name
 WHERE name in ('张三', '李四');
 
 -- 模糊查询
+-- % 是通配符，0个或多个
 -- %这里面填写值% 值包含在列单元格即满足条件
 SELECT *
 FROM table_name
@@ -78,6 +79,3 @@ SELECT name,
            WHEN english >= 80 THEN '良好'
            ELSE '待努力' END '描述'
 FROM table_name;
-
--- 查看创建表的语句
-SHOW CREATE TABLE table_name;

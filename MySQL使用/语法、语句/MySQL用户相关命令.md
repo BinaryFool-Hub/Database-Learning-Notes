@@ -50,3 +50,12 @@ update user set host='%' where user = 'new_user';
 FLUSH PRIVILEGES;
 ```
 
+# 修改用户密码
+
+```
+ALTER USER '用户名'@'localhost' IDENTIFIED BY '新密码';
+```
+
+- 将 `用户名` 替换为你想要更改的用户名。
+- 将 `密码` 替换为你想要设置的密码。
+- `localhost` 表示限制连接的设备，则表示本地设备

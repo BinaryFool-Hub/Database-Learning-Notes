@@ -14,7 +14,7 @@ CREATE TABLE table_name
     chinese  FLOAT,
     math     INT,
     english  FLOAT,
-    gender   char,
+    gender   CHAR,
     birthday DATE,
     notes    TEXT
 );

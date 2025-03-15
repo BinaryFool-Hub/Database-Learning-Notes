@@ -56,4 +56,5 @@ RENAME TABLE table_name TO table_name1;
 ALTER TABLE table_name RENAME table_name1;
 
 -- --------------------------------- 表重置 ---------------------------------
+-- 保存了日志 可以进行恢复
 TRUNCATE table_name;
