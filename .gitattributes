@@ -1,1 +1,2 @@
-*.* linguist-language=SQL
+*.sql linguist-language=SQL
+*.py linguist-detectable=false
