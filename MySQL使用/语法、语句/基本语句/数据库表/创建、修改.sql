@@ -43,7 +43,7 @@ ALTER TABLE table_name
 
 -- --------------------------------- 更改表格列数据类型 ---------------------------------
 
--- 更改 total 列的数据类型为整形
+-- 更改 total 列的数据类型为整形，等于修改了创建表的创建字段语句
 ALTER TABLE table_name
     MODIFY COLUMN total INT;
 
