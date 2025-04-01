@@ -88,7 +88,7 @@ FROM table_1
 GROUP BY name;
 
 -- 子查询
--- 在一个查询条件里面再次进行查询
+-- 在一个查询条件里面再次进行查询，可以使用 = < > 等关系字符或关键字来进行子查询，但是子查询的语句需要使用()来包裹
 SELECT name, wages
 FROM table_1
 WHERE wages in (SELECT wages FROM table_1 WHERE wages > 20000);
