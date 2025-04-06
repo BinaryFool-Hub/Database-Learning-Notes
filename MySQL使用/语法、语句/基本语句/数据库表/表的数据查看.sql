@@ -11,8 +11,12 @@ FROM table_name;
 SELECT name, chinese
 FROM table_name;
 
--- 别名显示
-SELECT name as 姓名, chinese as 语文
+-- 别名显示使用 AS
+SELECT name AS 姓名, chinese AS 语文
+FROM table_name;
+
+-- 别名显示直接取
+SELECT name 姓名, chinese 语文
 FROM table_name;
 
 -- 列的内容去重显示 DISTINCT ，字段只能是一个
