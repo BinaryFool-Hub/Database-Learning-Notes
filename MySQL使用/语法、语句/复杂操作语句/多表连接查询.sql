@@ -5,3 +5,13 @@ USE python_study;
 SELECT name, title, author_id
 FROM author
          INNER JOIN article ON author.id = article.author_id;
+
+-- 字段同名的情况可以使用表加点
+SELECT article.name, article.title, article.author_id
+FROM author
+         INNER JOIN article ON author.id = article.author_id;
+
+-- 字段同名的情况可以使用别名
+SELECT a1.name, a2.title, a2.author_id
+FROM author a1
+         INNER JOIN article a2 ON a1.id = a2.author_id;
