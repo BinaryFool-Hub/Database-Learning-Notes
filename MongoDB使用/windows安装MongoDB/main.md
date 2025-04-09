@@ -60,3 +60,7 @@
    ```shell
    E:\mongodb\bin\mongod.exe --dbpath E:\mongodb\data\db
    ```
+
+# 拓展
+
+如果缺少`shell`可以在官网进行下载: https://www.mongodb.com/try/download/shell
