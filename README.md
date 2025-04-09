@@ -10,7 +10,7 @@
 # 环境
 
 **编辑器：PyCharm 2024.1.4 (Professional Edition)**     
-**MySQL：8.0.40**
+**MySQL：8.0.40**        
 **MongoDB：8.0.6**
 
 # 阅读详情
