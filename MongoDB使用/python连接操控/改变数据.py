@@ -8,13 +8,13 @@ client = pymongo.MongoClient(
     password="root"
 )
 
-"""创建数据库，无则自动创建"""
+"""指定数据库，无则自动创建"""
 # 方法一
 db = client['test_databases']
 # 方法二
 # db = client.test
 
-"""创建集合"""
+"""指定集合，无则自动创建"""
 table = db["table"]
 
 """改变数据"""
