@@ -18,7 +18,10 @@ db = client['test_databases']
 table = db["table"]
 
 """删除数据"""
-# table.delete_one({"age": {"$gt": 50}})  # 找到第一个满足条件的，然后删除age大于50的
-table.delete_many({"age": {"$gt": 50}})  # 找到所有满足条件的，然后删除age大于50的
+table.delete_one({"age": {"$gt": 50}})  # 找到第一个满足条件的，然后删除age大于50的
+# table.delete_many({"age": {"$gt": 50}})  # 找到所有满足条件的，然后删除age大于50的
+
+# table.delete_one({})  # 删除第一条数据
+# table.delete_many({})  # 删除所有数据
 
 client.close()
