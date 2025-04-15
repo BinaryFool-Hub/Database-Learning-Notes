@@ -12,7 +12,9 @@
 **编辑器：PyCharm 2024.1.4 (Professional Edition)**     
 **MySQL：8.0.40**        
 **MongoDB：8.0.6**       
-**Redis：7.4.2**
+**数据库运行的操作系统：Windows 11 专业版**       
+**Redis：7.4.2**     
+**Redis运行的操作系统：Debian 12**
 
 # 阅读详情
 
