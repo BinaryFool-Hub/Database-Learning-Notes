@@ -11,7 +11,8 @@
 
 **编辑器：PyCharm 2024.1.4 (Professional Edition)**     
 **MySQL：8.0.40**        
-**MongoDB：8.0.6**
+**MongoDB：8.0.6**       
+**Redis：7.4.2**
 
 # 阅读详情
 
