@@ -9,14 +9,10 @@ CREATE TABLE table_name
     notes VARCHAR(20)
 );
 
--- (推荐) 删除这个自动创建的同名索引，当使用关键字 UNIQUE 会创建一个同名索引
+-- 删除这个自动创建的同名索引，当使用关键字 UNIQUE 会创建一个同名索引
 ALTER TABLE table_name
     DROP INDEX name;
 
--- 修改字段的唯一约束，等于修改了创建表的创建字段语句，如果有其他关键字语句也需要添加上去
--- MODIFY： 修改
--- COLUMN： 列
--- 修改了name列只有VARCHAR(20)特性
+-- 添加唯一约束
 ALTER TABLE table_name
-    MODIFY COLUMN name VARCHAR(20);
-
+    ADD UNIQUE (name);
