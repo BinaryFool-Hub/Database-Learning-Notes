@@ -11,3 +11,12 @@ CREATE TABLE tables_name
     password VARCHAR(15)
 );
 
+
+-- 删除默认值约束
+ALTER TABLE tables_name
+    MODIFY name VARCHAR(15);
+
+-- 添加默认值约束
+-- 等于重写了字段创建语句
+ALTER TABLE tables_name
+    MODIFY name VARCHAR(15) DEFAULT '默认值';
