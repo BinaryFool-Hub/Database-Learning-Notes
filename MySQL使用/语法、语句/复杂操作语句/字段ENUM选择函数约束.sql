@@ -9,3 +9,9 @@ CREATE TABLE tables_name
     name   VARCHAR(15),
     gender ENUM ('男', '女', '妖')
 );
+
+-- 修改为选择约束（如果创建表的时候没有带或其他）
+-- 直接修改了字段的属性
+ALTER TABLE tables_name
+    MODIFY gender ENUM ('男', '女');
+
