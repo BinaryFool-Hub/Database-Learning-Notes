@@ -20,6 +20,10 @@ CREATE TABLE tables_name
 ALTER TABLE tables_name
     MODIFY id INT;
 
+-- 添加主键（当创建表的时候没有给可以使用）
+ALTER TABLE tables_name
+    ADD CONSTRAINT PRIMARY KEY (id);
+
 -- 删除主键约束，不需要指定主键名，因为一个表只有一主键，删除主键约束后，非空约束还在
 -- 如果一个字段同时设置了主键和自增长，则不能删除主键约束（无法删除）
 ALTER TABLE tables_name
