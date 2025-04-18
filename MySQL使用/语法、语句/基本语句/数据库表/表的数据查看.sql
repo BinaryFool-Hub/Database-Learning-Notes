@@ -105,3 +105,9 @@ WHERE t1.job = '财务顾问'
   AND t2.hobby = '运动'
   AND t1.gender = '男';
 
+-- 把查询到的数据存放到新的表(不需要建立该表)
+-- 如果需要指定查询字段加入即可，表的字段会自动获取，不需要指定
+-- 如果查询需要跟随条件加入where语句条件即可
+CREATE TABLE new_name_table AS
+SELECT *
+FROM test_table;
