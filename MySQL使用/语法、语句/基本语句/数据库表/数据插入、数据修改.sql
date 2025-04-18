@@ -27,6 +27,15 @@ INSERT INTO new_name
 SELECT *
 FROM test_table;
 
+-- 插入多个值的另一种方法
+-- 而不是使用values来进行插入数据，这是另一种插入的关联方法
+INSERT INTO test_table(name)
+SELECT '内容1'
+UNION
+SELECT '内容2'
+UNION
+SELECT '内容3';
+
 
 -- --------------------------------- 修改表指定内容 ---------------------------------
 -- 修改 id 为 1 的行 total 列的值和 name 列的值
