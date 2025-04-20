@@ -27,12 +27,16 @@ INSERT INTO new_name
 SELECT *
 FROM test_table;
 
--- 插入多个值的另一种方法
--- 而不是使用values来进行插入数据，这是另一种插入的关联方法
+-- 多查询插入多值并查询的结果会默认去重
+-- 而不是使用values来进行插入数据，这是另一种使用UNION关联方法插入数据
+-- SELECT '内容3' 这条语句没有执行任何查询，单纯的赋值而已
+-- 如果需要跟随条件查询select语句后面可以跟where条件
 INSERT INTO test_table(name)
-SELECT '内容1'
+SELECT table1
+FROM name
 UNION
-SELECT '内容2'
+SELECT table2
+FROM notes
 UNION
 SELECT '内容3';
 
