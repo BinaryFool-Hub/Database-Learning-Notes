@@ -47,7 +47,8 @@ WHERE name in ('张三', '李四');
 
 -- 模糊查询
 -- % 是通配符，0个或多个
--- %这里面填写值% 值包含在列单元格即满足条件
+-- _ 是通配符，必须有一个，且只能是一个
+-- 例子：`张%`-->查询`张`开头的任何数据。`%张%`-->查询含有`张`字的任何数据。`张_`-->查询`张`字开头且后面所有字符必须只有一个字的数据
 SELECT *
 FROM table_name
 WHERE name LIKE '%张%';
@@ -111,3 +112,9 @@ WHERE t1.job = '财务顾问'
 CREATE TABLE new_name_table AS
 SELECT *
 FROM test_table;
+
+-- 查询两者之间(包含)满足条件的数据
+-- 查询70-80之间(包含两者)的值，顺序不能调换，小的在前面，不然无满足条件
+SELECT *
+FROM test_table
+WHERE score BETWEEN 70 AND 80;
