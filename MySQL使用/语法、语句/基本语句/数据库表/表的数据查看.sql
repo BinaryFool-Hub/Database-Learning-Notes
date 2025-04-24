@@ -19,8 +19,9 @@ FROM table_name;
 SELECT name 姓名, chinese 语文
 FROM table_name;
 
--- 列的内容去重显示 DISTINCT ，字段只能是一个
-SELECT DISTINCT name
+-- 列的内容去重显示 DISTINCT
+-- 后面跟着多个字段只有当两条记录的 字段1 和 字段2 都完全相同时，才会被视为重复
+SELECT DISTINCT name, age
 FROM table_name;
 
 -- 显示数据拼接后的列并且取别名显示，这里字符串连接的内容，而不是表里面的列的键，name、chinese才是键，查询出后让字符串拼接展示
