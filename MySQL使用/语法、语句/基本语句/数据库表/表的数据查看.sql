@@ -83,6 +83,14 @@ SELECT name, COUNT(name) AS name_num
 FROM table_1
 GROUP BY name;
 
+-- HAVING用于对分组后的数据进行筛选
+-- 它常与 GROUP BY 一起使用，作用是在分组聚合之后过滤结果，类似于 WHERE，但 WHERE 是在分组前过滤。
+-- 筛选出avg_score <= 60的值
+SELECT AVG(score) AS avg_score, student_id
+FROM student_table
+GROUP BY student_id
+HAVING avg_score <= 60;
+
 -- 子查询
 -- 在一个查询条件里面再次进行查询，可以使用 = < > 等关系字符或关键字来进行子查询，但是子查询的语句需要使用()来包裹
 SELECT name, wages
