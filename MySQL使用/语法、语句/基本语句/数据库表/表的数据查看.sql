@@ -79,6 +79,7 @@ FROM table_name;
 -- 分组操作
 -- 查询 name 并且统计 name 的个数，让 name 进行分组就不会导致返回数据相同和报错
 -- 分组就是把很多个相同的数据统一返回一个（3个张三，就返回1个张三，然后后面的数据是统计张三的个数）
+-- 分组可以是多个字段，就会把两个字段同时相同的值作为一组
 SELECT name, COUNT(name) AS name_num
 FROM table_1
 GROUP BY name;
